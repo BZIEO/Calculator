@@ -1,26 +1,22 @@
 //Basic math operators 
-function add(x,y) {
-    let res = x + y;
-    return res
+const add = function (x,y) {
+    return x + y
 }
 
-function subtract(x,y) {
-    let res = x-y;
-    return res
+const subtract = function (x,y) {
+    return x-y
 }
 
-function multiply(x,y) {
-    let res = x*y;
-    return res
+const multiply = function(x,y) {
+    return x*y
 }
 
-function divide(x,y) {
-    let res = x/y;
-    return res
+const divide = function(x,y) {
+    return x/y;
 }
 
-
-function operate(operator, x, y) {
+//Function that takes an operator and 2 numbers
+const operate = function(operator, x, y) {
     x = +x;
     y = +y;
 

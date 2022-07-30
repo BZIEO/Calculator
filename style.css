@@ -1,13 +1,12 @@
 *, *::before, *::after {
     box-sizing:border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Myriad Pro', 'Arial Narrow', Arial, sans-serif;
     font-weight: normal;
 }
 
 body {
     padding: 0;
-    margin: 0;
-    background: linear-gradient(to right, black,grey );
+    margin: 0;;
 }
 
 .calculator-grid {
@@ -23,7 +22,7 @@ body {
 .calculator-grid > button {
     cursor: pointer;
     font-size: 2rem;
-    border: 1px solid white;
+    border: 1px solid rgba(0, 0, 0, 0.418);
     outline: none;
     background-color: (255,255,255,.75);
     transition: 0.2s;
@@ -39,7 +38,7 @@ body {
 
 .output {
     grid-column: 1 / -1;
-    background-color: rgba(0, 0, 0, 0.726);
+    background-color: #1C1C1C;
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
@@ -49,3 +48,18 @@ body {
     word-break: break-all;
     color: white;
 }
+
+.output .previous-operand {
+    color: rgba(255,255,255,.75);
+    font-size: 1.5rem;
+}
+.output .current-operand {
+    color: rgba(255,255,255);
+    font-size: 2.5rem;
+}
+
+.operator {
+    background-color: #FF9500;
+    color: white;
+}
+
