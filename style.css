@@ -6,7 +6,8 @@
 
 body {
     padding: 0;
-    margin: 0;;
+    margin: 0;
+    background-color: #1f1f1fa9;
 }
 
 .calculator-grid {
